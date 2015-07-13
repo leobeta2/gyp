@@ -21,5 +21,5 @@ urlpatterns = [
     #url(r'^admin/', include(admin.site.urls)),
     url(r'^hola/$',hola),
     url(r'^$', index),
-    url(r'^index/$', index),
+    url(r'^inicio/$', index),
 ]
