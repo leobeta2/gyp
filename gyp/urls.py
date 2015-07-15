@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from gyp.views import hola, index
+from gyp.views import index, about
 
 urlpatterns = [
     #url(r'^admin/', include(admin.site.urls)),
-    url(r'^hola/$',hola),
+    
     url(r'^$', index),
     url(r'^inicio/$', index),
+    url(r'^sobre/$', about),
 ]
