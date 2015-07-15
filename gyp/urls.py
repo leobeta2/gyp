@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from gyp.views import index, about
+from gyp.views import index, about, location
 
 urlpatterns = [
     #url(r'^admin/', include(admin.site.urls)),
@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^$', index),
     url(r'^inicio/$', index),
     url(r'^sobre/$', about),
+    url(r'^ubicacion/$', location),
 ]
