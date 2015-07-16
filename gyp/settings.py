@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'contactos',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -105,4 +106,13 @@ STATICFILES_DIRS = (
         os.path.join(BASE_DIR,'gyp/static'),
     )
 
+MEDIA_ROOT = 'media/'
+
+MEDIA_URL = 'http://localhost:8000/media/'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'leobeta2@gmail.com'
+EMAIL_HOST_PASSWORD = 'skarworta244'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 

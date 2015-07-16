@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from gyp.views import index, about, location
+from contactos.views import contactos
 
 urlpatterns = [
     #url(r'^admin/', include(admin.site.urls)),
@@ -24,4 +25,5 @@ urlpatterns = [
     url(r'^inicio/$', index),
     url(r'^sobre/$', about),
     url(r'^ubicacion/$', location),
+    url(r'^contactos/$',contactos),
 ]
