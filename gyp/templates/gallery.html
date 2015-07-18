@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}GyPnetwork | Galeria{% endblock %}
+
+{% block body %}
+
+<div class="breadcrumbs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-4">
+                    <h1>Galeria</h1>
+                </div>
+                <div class="col-lg-8 col-sm-8">
+                    <ol class="breadcrumb pull-right">
+                        <li><a href="#">inicio</a></li>
+                        <li class="active">Galeria</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumbs end-->
+
+
+  <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="pf-img">
+                     <img max-height="200" src="{% static 'dist/img/portfolios/1.jpg' %}"/>
+                 </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="pf-img">
+                     <img max-height="200" src="{% static 'dist/img/portfolios/2.jpg' %}"/>
+                 </div>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="pf-img">
+                     <img max-height="200" src="{% static 'dist/img/portfolios/3.jpg' %}"/>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--container start-->
+    <div class="container">
+        <div class="row">
+            <!--portfolio-single start-->
+
+            <div class="col-lg-9 ">
+                <div class="title">
+                    <h3>Camaras, Alarmas y Comunicaciones</h3>
+                    <hr>
+                </div>
+                <div class="pf-detail">
+                    <p> Servicio de primer nivel, y con los mejores estandares y facil control
+                    </p>
+                    <p> Nuestra empresa se enfoca en dar una solucion rápida y eficiente a la necesidad del cliente, ajustandose completamente a lo que este requiere
+                    </p>
+                </div>
+                <p><button class="btn bg-maroon margin"><i class="fa fa-external-link pr-5"></i>Previamente</button></p>
+            </div>
+        </div>
+        <ul class="pager">
+          <li class="previous"><a href="#">&larr; Antes</a></li>
+        </ul>
+        <hr>
+    </div>
+
+{% endblock %}

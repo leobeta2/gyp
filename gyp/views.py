@@ -10,3 +10,6 @@ def about(request):
 
 def location(request):
 	return render(request, 'location.html')
+
+def gallery(request):
+	return render(request, 'gallery.html')
