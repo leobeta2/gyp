@@ -18,5 +18,5 @@ def contactos(request):
             mail.send()
             return HttpResponseRedirect('/contactos/gracias/')
     else:
-        form = FormularioContactos(initial={'asunto':'adoro tu sitio!'})
+        form = FormularioContactos()
     return render(request, 'formulario-contactos.html', {'form': form})

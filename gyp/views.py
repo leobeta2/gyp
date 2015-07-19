@@ -13,3 +13,6 @@ def location(request):
 
 def gallery(request):
 	return render(request, 'gallery.html')
+
+def gracias(request):
+	return render(request, 'gracias.html')

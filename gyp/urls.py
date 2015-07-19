@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import include, url
 from django.contrib import admin
-from gyp.views import index, about, location, gallery
+from gyp.views import index, about, location, gallery, gracias
 from contactos.views import contactos
 
 urlpatterns = [
@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^ubicacion/$', location),
     url(r'^contactos/$',contactos),
     url(r'^galeria/$',gallery),
+    url(r'^contactos/gracias/$',gracias),
 ]
