@@ -111,8 +111,8 @@ MEDIA_ROOT = 'media/'
 MEDIA_URL = 'http://localhost:8000/media/'
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'leobeta2@gmail.com'
-EMAIL_HOST_PASSWORD = 'skarworta244'
+EMAIL_HOST_USER = 'gypnetwork.info@gmail.com'
+EMAIL_HOST_PASSWORD = 'charchatel'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 

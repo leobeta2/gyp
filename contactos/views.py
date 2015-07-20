@@ -12,8 +12,8 @@ def contactos(request):
             mail = EmailMessage(
                 cd['asunto'],
                 cd['mensaje'],
-                cd.get('email', 'leobeta@gmail.com'),
-                ['leobeta2@hotmail.com'],#direccion adonde llega
+                cd.get('email', 'gypnetwork.info@gmail.com'),
+                ['gypnetwork.info@gmail.com'],#direccion adonde llega
             )
             mail.send()
             return HttpResponseRedirect('/contactos/gracias/')
