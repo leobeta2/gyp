@@ -24,8 +24,9 @@ urlpatterns = [
     url(r'^$', index),
     url(r'^inicio/$', index),
     url(r'^sobre/$', about),
+    url(r'^productos/', include('productos.urls', namespace="productos")),
     url(r'^ubicacion/$', location),
-    url(r'^contactos/$',contactos),
+    url(r'^contacto/$',contactos),
     url(r'^galeria/$',gallery),
     url(r'^contactos/gracias/$',gracias),
 ]
